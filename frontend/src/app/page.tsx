@@ -19,12 +19,12 @@ export default function HomePage() {
       <Hero />
       <Features />
       <TrainingUniverse />
-      <FeaturedBundles />
-      <TrainingJourney />
       <TrustedStats />
+      <FeaturedBundles />
+      {/* <Partners />
+      <TrainingJourney />
       <Trainers />
-      <SuccessStories />
-      <Partners />
+      <SuccessStories /> */}
     </>
   );
 }
