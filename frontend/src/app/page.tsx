@@ -21,10 +21,10 @@ export default function HomePage() {
       <TrainingUniverse />
       <TrustedStats />
       <FeaturedBundles />
-      {/* <Partners />
+      <Partners />
       <TrainingJourney />
       <Trainers />
-      <SuccessStories /> */}
+      <SuccessStories /> 
     </>
   );
 }
