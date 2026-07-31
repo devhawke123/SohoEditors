@@ -18,10 +18,10 @@ export const metadata: Metadata = {
 export default function TrainingPage() {
   return (
     <>
-      {/* <TrainingHero />
+      <TrainingHero />
       <TrainingHighlights />
       <LearningFormats />
-      <CertifiedCourses /> */}
+      <CertifiedCourses />
     </>
   );
 }

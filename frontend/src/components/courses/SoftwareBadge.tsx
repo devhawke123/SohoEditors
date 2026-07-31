@@ -6,6 +6,11 @@ const THEMES: Record<string, { bg: string; text: string }> = {
   Pr: { bg: "bg-[#1c0f3a]", text: "text-[#9b87f5]" },
   Ae: { bg: "bg-[#1a0a1f]", text: "text-[#d4a5ff]" },
   Id: { bg: "bg-[#4a0a1f]", text: "text-[#f5a0c0]" },
+  Ps: { bg: "bg-[#001e36]", text: "text-[#31a8ff]" },
+  Ai: { bg: "bg-[#330000]", text: "text-[#ff9a00]" },
+  Av: { bg: "bg-[#1a1a1a]", text: "text-[#e31c23]" },
+  Dr: { bg: "bg-[#1a1a1a]", text: "text-[#f26b51]" },
+  Fc: { bg: "bg-[#1c1c1e]", text: "text-[#a3a3a3]" },
 };
 
 export default function SoftwareBadge({
@@ -13,7 +18,7 @@ export default function SoftwareBadge({
   size = "sm",
 }: {
   label: string;
-  size?: "sm" | "md" | "lg";
+  size?: "icon" | "sm" | "md" | "lg";
 }) {
   const theme = THEMES[label] ?? THEMES.Pr;
 
@@ -31,6 +36,17 @@ export default function SoftwareBadge({
     return (
       <div
         className={`flex size-[71px] shrink-0 items-center justify-center rounded-[10px] ${theme.bg} text-[1.75rem] font-bold ${theme.text}`}
+      >
+        {label}
+      </div>
+    );
+  }
+
+  if (size === "icon") {
+    return (
+      <div
+        className={`flex size-10 shrink-0 items-center justify-center rounded-lg ${theme.bg} text-sm font-bold ${theme.text}`}
+        title={label}
       >
         {label}
       </div>

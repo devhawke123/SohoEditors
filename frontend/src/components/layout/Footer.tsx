@@ -9,16 +9,17 @@ import Logo from "@/components/layout/Logo";
 import Button from "@/components/ui/Button";
 
 const TRAINING_LINKS = [
-  "Training HomePage",
-  "Courses",
-  "Our Training",
-  "Resources",
-  "Free Video Tutorial",
-  "Customer Reviews",
-  "Live Online Classes",
-  "Bespoke Training",
-  "Certified Pro Tutorials",
-  "ScreenSkills Funding",
+  { label: "Training HomePage", href: "/training" },
+  { label: "Courses", href: "/training" },
+  { label: "Our Training", href: "/training" },
+  { label: "Resources", href: "/resources" },
+  { label: "Free Video Tutorial", href: "/videos" },
+  { label: "Our Trainers", href: "/trainers" },
+  { label: "Customer Reviews", href: "/customer-reviews" },
+  { label: "Live Online Classes", href: "/live-online-classes" },
+  { label: "Bespoke Training", href: "/bespoke-training" },
+  { label: "Certified Pro Tutorials", href: "#" },
+  { label: "ScreenSkills Funding", href: "/screenskills-funding" },
 ] as const;
 
 const ABOUT_LINKS = [
@@ -98,9 +99,9 @@ export default function Footer() {
             Training Courses
           </h3>
           <ul className="flex flex-col gap-4 text-footer-link text-white">
-            {TRAINING_LINKS.map((label) => (
+            {TRAINING_LINKS.map(({ label, href }) => (
               <li key={label}>
-                <Link href="#" className="transition-opacity hover:opacity-80">
+                <Link href={href} className="transition-opacity hover:opacity-80">
                   {label}
                 </Link>
               </li>
