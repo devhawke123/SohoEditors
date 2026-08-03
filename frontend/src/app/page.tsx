@@ -24,7 +24,7 @@ export default function HomePage() {
       <Partners />
       <TrainingJourney />
       <Trainers />
-      <SuccessStories />
+      <SuccessStories /> 
     </>
   );
 }
