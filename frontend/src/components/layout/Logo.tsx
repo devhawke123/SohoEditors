@@ -1,24 +1,28 @@
+import Image from "next/image";
 import Link from "next/link";
+import darkLogo from "@/assets/dark-logo.png";
+import lightLogo from "@/assets/light-logo.png";
 
 type LogoProps = {
-  /** `light` = dark text (navbar). `dark` = white text (footer). */
+  /** `light` = for light backgrounds (navbar). `dark` = for dark backgrounds (footer). */
   variant?: "light" | "dark";
   className?: string;
 };
 
 export default function Logo({ variant = "light", className = "" }: LogoProps) {
-  const sohoColor = variant === "dark" ? "text-white" : "text-black";
+  // dark-logo = black + coral wordmark; light-logo = white + coral wordmark
+  const src = variant === "dark" ? lightLogo : darkLogo;
 
   return (
-    <Link href="/" className={`shrink-0 leading-none ${className}`}>
-      <span
-        className={`block font-display text-[clamp(1.125rem,1.2vw+0.6rem,1.375rem)] font-bold tracking-[0.08em] uppercase ${sohoColor}`}
-      >
-        SOHO
-      </span>
-      <span className="block font-display text-[clamp(0.9375rem,1vw+0.5rem,1.125rem)] font-bold tracking-[0.04em] text-brand">
-        eDITORS
-      </span>
+    <Link href="/" className={`inline-flex shrink-0 items-center ${className}`}>
+      <Image
+        src={src}
+        alt="Soho Editors"
+        width={142}
+        height={70}
+        className="h-[clamp(2rem,3.2vw,2.75rem)] w-auto"
+        priority={variant === "light"}
+      />
     </Link>
   );
 }

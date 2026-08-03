@@ -45,7 +45,7 @@ export default async function CourseDetailPage({ params }: PageProps) {
 
   return (
     <>
-      {/* <CourseHero course={course} />
+      <CourseHero course={course} />
       <WhatWillBeCovered course={course} />
       <LearnYourWay />
       <WhatsIncluded />
@@ -57,7 +57,7 @@ export default async function CourseDetailPage({ params }: PageProps) {
         titleHighlight="industry leaders"
       />
       <SuccessStories />
-      <RelatedCourses /> */}
+      <RelatedCourses />
     </>
   );
 }

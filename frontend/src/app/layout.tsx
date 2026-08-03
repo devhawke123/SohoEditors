@@ -6,6 +6,14 @@
  *   app/page.tsx                    →  /
  *   app/training/page.tsx           →  /training
  *   app/training/[slug]/page.tsx   →  /training/pp101 (course detail)
+ *   app/resources/page.tsx          →  /resources
+ *   app/videos/page.tsx             →  /videos
+ *   app/training-help/page.tsx      →  /training-help
+ *   app/trainers/page.tsx           →  /trainers
+ *   app/screenskills-funding/page.tsx → /screenskills-funding
+ *   app/live-online-classes/page.tsx  → /live-online-classes
+ *   app/customer-reviews/page.tsx     → /customer-reviews
+ *   app/bespoke-training/page.tsx     → /bespoke-training
  * Add a new page by creating app/<name>/page.tsx
  */
 import type { Metadata } from "next";
