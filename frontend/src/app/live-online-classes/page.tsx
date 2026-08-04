@@ -1,8 +1,9 @@
 /**
- * ROUTE: /live-online-classes
- * Live online training classes and virtual support overview.
- * Section UI: components/pages/live-online-classes/
+ * ROUTE: /live-online-classes — temporarily disabled (active: Home, Resources, FAQs).
  */
+import { notFound } from "next/navigation";
+
+/*
 import type { Metadata } from "next";
 import LiveOnlineHero from "@/components/pages/live-online-classes/LiveOnlineHero";
 import LiveOnlineSupport from "@/components/pages/live-online-classes/LiveOnlineSupport";
@@ -22,4 +23,9 @@ export default function LiveOnlineClassesPage() {
       <LiveOnlineSupport />
     </>
   );
+}
+*/
+
+export default function LiveOnlineClassesPage() {
+  notFound();
 }

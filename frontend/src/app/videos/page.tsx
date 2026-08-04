@@ -1,9 +1,9 @@
 /**
- * ROUTE: /videos
- * Free video tutorials page.
- * Section UI: components/pages/videos/
- * Video media is placeholder-only — swap for real embeds later.
+ * ROUTE: /videos — temporarily disabled (active: Home, Resources, FAQs).
  */
+import { notFound } from "next/navigation";
+
+/*
 import type { Metadata } from "next";
 import VideoCategories from "@/components/pages/videos/VideoCategories";
 import VideosHero from "@/components/pages/videos/VideosHero";
@@ -21,4 +21,9 @@ export default function VideosPage() {
       <VideoCategories />
     </>
   );
+}
+*/
+
+export default function VideosPage() {
+  notFound();
 }

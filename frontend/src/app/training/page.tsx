@@ -1,8 +1,9 @@
 /**
- * ROUTE: /training
- * Training page. Add/remove sections here.
- * Section UI lives in: components/pages/training/
+ * ROUTE: /training — temporarily disabled (active: Home, Resources, FAQs).
  */
+import { notFound } from "next/navigation";
+
+/*
 import type { Metadata } from "next";
 import CertifiedCourses from "@/components/pages/training/CertifiedCourses";
 import LearningFormats from "@/components/pages/training/LearningFormats";
@@ -24,4 +25,9 @@ export default function TrainingPage() {
       <CertifiedCourses />
     </>
   );
+}
+*/
+
+export default function TrainingPage() {
+  notFound();
 }

@@ -1,11 +1,11 @@
 /**
- * ROUTE: /screenskills-funding
- * Free ScreenSkills-funded course overview.
- * Section UI: components/pages/screenskills-funding/
+ * ROUTE: /screenskills-funding — temporarily disabled (active: Home, Resources, FAQs).
  */
+import { notFound } from "next/navigation";
+
+/*
 import type { Metadata } from "next";
 import ScreenskillsHero from "@/components/pages/screenskills-funding/ScreenskillsHero";
-import ScreenskillsTestimonials from "@/components/pages/screenskills-funding/ScreenskillsTestimonials";
 import ScreenskillsTracks from "@/components/pages/screenskills-funding/ScreenskillsTracks";
 
 export const metadata: Metadata = {
@@ -19,7 +19,11 @@ export default function ScreenskillsFundingPage() {
     <>
       <ScreenskillsHero />
       <ScreenskillsTracks />
-      <ScreenskillsTestimonials />
     </>
   );
+}
+*/
+
+export default function ScreenskillsFundingPage() {
+  notFound();
 }

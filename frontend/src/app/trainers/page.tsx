@@ -1,8 +1,9 @@
 /**
- * ROUTE: /trainers
- * Trainer directory — dummy profiles for now; later fed by registered trainers.
- * Section UI: components/pages/trainers/
+ * ROUTE: /trainers — temporarily disabled (active: Home, Resources, FAQs).
  */
+import { notFound } from "next/navigation";
+
+/*
 import type { Metadata } from "next";
 import OurTrainersHero from "@/components/pages/trainers/OurTrainersHero";
 import TrainerDirectory from "@/components/pages/trainers/TrainerDirectory";
@@ -24,4 +25,9 @@ export default function TrainersPage() {
       <TrainerDirectory />
     </>
   );
+}
+*/
+
+export default function TrainersPage() {
+  notFound();
 }
