@@ -1,11 +1,10 @@
 /**
- * ROUTE: /training/[slug]
- * Example: /training/pp101
- * Course detail (inner) page.
- * Section UI: components/pages/course/
+ * ROUTE: /training/[slug] — temporarily disabled (active: Home, Resources, FAQs).
  */
-import type { Metadata } from "next";
 import { notFound } from "next/navigation";
+
+/*
+import type { Metadata } from "next";
 import CourseHero from "@/components/pages/course/CourseHero";
 import DeliveryComparison from "@/components/pages/course/DeliveryComparison";
 import LearnYourWay from "@/components/pages/course/LearnYourWay";
@@ -60,4 +59,9 @@ export default async function CourseDetailPage({ params }: PageProps) {
       <RelatedCourses />
     </>
   );
+}
+*/
+
+export default function CourseDetailPage() {
+  notFound();
 }

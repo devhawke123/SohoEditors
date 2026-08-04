@@ -1,8 +1,9 @@
 /**
- * ROUTE: /bespoke-training
- * Custom / bespoke training options overview.
- * Section UI: components/pages/bespoke-training/
+ * ROUTE: /bespoke-training — temporarily disabled (active: Home, Resources, FAQs).
  */
+import { notFound } from "next/navigation";
+
+/*
 import type { Metadata } from "next";
 import BespokeAudiences from "@/components/pages/bespoke-training/BespokeAudiences";
 import BespokeFeatureGrid from "@/components/pages/bespoke-training/BespokeFeatureGrid";
@@ -41,4 +42,9 @@ export default function BespokeTrainingPage() {
       />
     </>
   );
+}
+*/
+
+export default function BespokeTrainingPage() {
+  notFound();
 }

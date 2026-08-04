@@ -1,10 +1,11 @@
 /**
- * ROUTE: /trainers/[slug]
- * Individual trainer profile stub — expand when accounts/CMS are wired.
+ * ROUTE: /trainers/[slug] — temporarily disabled (active: Home, Resources, FAQs).
  */
+import { notFound } from "next/navigation";
+
+/*
 import type { Metadata } from "next";
 import Image from "next/image";
-import { notFound } from "next/navigation";
 import SoftwareBadge from "@/components/courses/SoftwareBadge";
 import Button from "@/components/ui/Button";
 import { TRAINER_PROFILES } from "@/data/trainers";
@@ -95,4 +96,9 @@ export default async function TrainerProfilePage({ params }: PageProps) {
       </div>
     </section>
   );
+}
+*/
+
+export default function TrainerProfilePage() {
+  notFound();
 }
