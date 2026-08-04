@@ -8,20 +8,36 @@ import icYoutube from "@/assets/icons/ic-youtube.svg";
 import Logo from "@/components/layout/Logo";
 import Button from "@/components/ui/Button";
 
+// const TRAINING_LINKS = [
+//   { label: "Training HomePage", href: "/training" },
+//   { label: "Courses", href: "/training" },
+//   { label: "Our Training", href: "/training" },
+//   { label: "Resources", href: "/resources" },
+//   { label: "FAQs", href: "/training-help" },
+//   { label: "Free Video Tutorial", href: "/videos" },
+//   { label: "Our Trainers", href: "/trainers" },
+//   { label: "Customer Reviews", href: "/customer-reviews" },
+//   { label: "Live Online Classes", href: "/live-online-classes" },
+//   { label: "Bespoke Training", href: "/bespoke-training" },
+//   { label: "Certified Pro Tutorials", href: "#" },
+//   { label: "ScreenSkills Funding", href: "/screenskills-funding" },
+// ] as const;
+
 const TRAINING_LINKS = [
-  // { label: "Training HomePage", href: "/training" },
-  // { label: "Courses", href: "/training" },
-  // { label: "Our Training", href: "/training" },
+  { label: "Training HomePage", href: "/#" },
+  { label: "Courses", href: "/#" },
+  { label: "Our Training", href: "/#" },
   { label: "Resources", href: "/resources" },
   { label: "FAQs", href: "/training-help" },
-  // { label: "Free Video Tutorial", href: "/videos" },
-  // { label: "Our Trainers", href: "/trainers" },
-  // { label: "Customer Reviews", href: "/customer-reviews" },
-  // { label: "Live Online Classes", href: "/live-online-classes" },
-  // { label: "Bespoke Training", href: "/bespoke-training" },
-  // { label: "Certified Pro Tutorials", href: "#" },
-  // { label: "ScreenSkills Funding", href: "/screenskills-funding" },
+  { label: "Free Video Tutorial", href: "#" },
+  { label: "Our Trainers", href: "/#" },
+  { label: "Customer Reviews", href: "/#" },
+  { label: "Live Online Classes", href: "/#" },
+  { label: "Bespoke Training", href: "/#" },
+  { label: "Certified Pro Tutorials", href: "#" },
+  { label: "ScreenSkills Funding", href: "/#" },
 ] as const;
+
 
 const ABOUT_LINKS = [
   "Booking Terms and Conditions",
