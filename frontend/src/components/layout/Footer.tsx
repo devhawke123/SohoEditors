@@ -33,7 +33,7 @@ const TRAINING_LINKS = [
   { label: "Our Trainers", href: "/#" },
   { label: "Customer Reviews", href: "/#" },
   { label: "Live Online Classes", href: "/#" },
-  { label: "Bespoke Training", href: "/#" },
+  { label: "Bespoke Training", href: "/bespoke-training" },
   { label: "Certified Pro Tutorials", href: "#" },
   { label: "ScreenSkills Funding", href: "/#" },
 ] as const;

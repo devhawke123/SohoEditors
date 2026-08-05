@@ -7,9 +7,13 @@ import Button from "@/components/ui/Button";
 
 /**
  * Matches Figma NavBar (final-taining-web / Resources).
- * Working routes for now: Home, Resources, FAQs.
+ * Working routes: Home, Resources, FAQs, Bespoke Training.
  * Other items stay visible; href="#" until re-enabled.
  */
+const TRAINING_SERVICE_LINKS = [
+  { label: "Bespoke Training", href: "/bespoke-training" },
+] as const;
+
 const FREE_RESOURCE_LINKS = [
   { label: "Resources", href: "/resources" },
   { label: "Free Video Tutorials", href: "#" },
@@ -19,7 +23,12 @@ const FREE_RESOURCE_LINKS = [
 
 const NAV_LINKS = [
   { label: "Home", href: "/" },
-  { label: "Training Services", href: "#", dropdown: true },
+  {
+    label: "Training Services",
+    href: "/bespoke-training",
+    dropdown: true,
+    items: TRAINING_SERVICE_LINKS,
+  },
   { label: "Training Bundles", href: "#" },
   {
     label: "Free Resources",

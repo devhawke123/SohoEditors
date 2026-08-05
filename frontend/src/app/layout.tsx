@@ -6,7 +6,8 @@
  *   app/page.tsx                    →  /
  *   app/resources/page.tsx          →  /resources
  *   app/training-help/page.tsx      →  /training-help (FAQs)
- * Other page.tsx files are temporarily commented out / return notFound().
+ *   app/bespoke-training/page.tsx   →  /bespoke-training
+ * Other page.tsx files are temporarily disabled via notFound().
  * Add a new page by creating app/<name>/page.tsx
  */
 import type { Metadata } from "next";
